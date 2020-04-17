@@ -1,0 +1,31 @@
+.ViewMap {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 65vw;
+  position: relative;
+
+
+}
+
+#map-container {
+  overflow: hidden;
+}
+
+@media (max-width: 520px) {
+  #map-container {
+    display: none;
+  }
+}
+
+/* @media (min-width: 360px) {
+  #port-warn {
+    display: none;
+  }
+
+  .ViewMap {
+    height: 100vh;
+    width: 65vw;
+
+  }
+} */

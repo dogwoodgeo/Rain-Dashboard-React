@@ -1,0 +1,10 @@
+/* .Header {
+  background: #32322f;
+} */
+
+
+@media (max-width: 360px) {
+  #div {
+    visibility: hidden;
+  }
+}

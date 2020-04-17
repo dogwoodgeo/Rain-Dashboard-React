@@ -1,0 +1,28 @@
+#gauges-container {
+  overflow: scroll;
+  position: absolute;
+  width: 35vw;
+  height: 100vh;
+
+
+
+}
+
+/* .CardDeck {
+  overflow: scroll;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+} */
+
+h3 {
+  text-align: center;
+  color: #efefef;
+
+}
+
+@media (max-width: 520px) {
+  #gauges-container {
+    width: 100vw;
+  }
+}

@@ -1,0 +1,118 @@
+[{
+    "tag": "ADAMS.AF2295LQT.F_CV",
+    "name": "ADAMS",
+    "timestamp": "4/16/2020 11:04:00 AM",
+    "value": 1.20,
+    "change": 0,
+    "valid": "OK"
+
+  },
+  {
+    "tag": "ADAMS.AS1941CAT.F_CV",
+    "name": "ARCH",
+    "timestamp": "4/16/2020 11:04:00 AM",
+    "value": 1.12,
+    "change": 0,
+    "valid": "OK"
+
+  },
+  {
+    "tag": "ADAMS.CAB2295LQT.F_CV",
+    "name": "CAB",
+    "timestamp": "4/16/2020 11:04:00 AM",
+    "value": 2.1,
+    "change": 0.35,
+    "valid": "OK"
+
+  },
+  {
+    "tag": "ADAMS.CR1941LQT.F_CV",
+    "name": "CANTRELL",
+    "timestamp": "4/16/2020 11:04:00 AM",
+    "value": 0.83,
+    "change": 0.04,
+    "valid": "OK"
+
+  },
+  {
+    "tag": "ADAMS.CV1942CAT.F_CV",
+    "name": "CHENAL",
+    "timestamp": "4/16/2020 11:04:00 AM",
+    "value": 0.27,
+    "change": 0.01,
+    "valid": "OK"
+
+  },
+  {
+    "tag": "ADAMS.HR1942CAT.F_CV",
+    "name": "HEINKE",
+    "timestamp": "4/16/2020 11:04:00 AM",
+    "value": 1.01,
+    "change": 0.05,
+    "valid": "OK"
+
+  },
+  {
+    "tag": "ADAMS.JR1941CAT.F_CV",
+    "name": "JAMISON",
+    "timestamp": "4/16/2020 11:04:00 AM",
+    "value": 0.92,
+    "change": 0.16,
+    "valid": "OK"
+
+  },
+  {
+    "tag": "ADAMS.LA1941CAT.F_CV",
+    "name": "LAMAR",
+    "timestamp": "4/16/2020 11:04:00 AM",
+    "value": 1.31,
+    "change": 0.19,
+    "valid": "OK"
+
+  },
+  {
+    "tag": "ADAMS.LF1941CAT.F_CV",
+    "name": "LONGFELLOW",
+    "timestamp": "4/16/2020 11:04:00 AM",
+    "value": 1.01,
+    "change": 0.11,
+    "valid": "OK"
+
+  },
+  {
+    "tag": "ADAMS.PF2295LQT.F_CV",
+    "name": "PEAK FLOW",
+    "timestamp": "4/16/2020 11:04:00 AM",
+    "value": 1.43,
+    "change": 0.09,
+    "valid": "OK"
+
+  },
+  {
+    "tag": "ADAMS.RR1942CAT.F_CV",
+    "name": "RIVER RIDGE",
+    "timestamp": "4/16/2020 11:04:00 AM",
+    "value": 0.74,
+    "change": 0.0,
+    "valid": "OK"
+
+  },
+  {
+    "tag": "FOURCHE.FC2295LQT.F_CV",
+    "name": "FOURCHE",
+    "timestamp": "4/16/2020 11:04:00 AM",
+    "value": 1.12,
+    "change": 0.0,
+    "valid": "OK"
+
+  },
+  {
+    "tag": "MAUMELLE.LM1941CAT.F_CV",
+    "name": "MAUMELLE",
+    "timestamp": "4/16/2020 11:04:00 AM",
+    "value": 0.57,
+    "change": 0.02,
+    "valid": "OK"
+
+  }
+]
