@@ -1,0 +1,16 @@
+#data-container {
+  position: absolute;
+  width: 35vw;
+  height: 100vh;
+  overflow: scroll;
+
+
+}
+
+
+
+@media (max-width: 520px) {
+  #data-container {
+    width: 100vw;
+  }
+}

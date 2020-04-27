@@ -1,20 +1,24 @@
 import React from 'react';
 import { Container, Col, Row } from 'react-bootstrap';
 import './MainCont.css';
-import ViewMap from './ViewMap.jsx';
-import Gauges from './Gauges.jsx';
+import ViewMap from './ViewMap';
+import DataContainer from './DataContainer';
+import LiveData from './pages/live-data.json';
 
 export default class MainCont extends React.Component {
-  state = {};
+  state = {
+    gauges: LiveData,
+  };
+
   render() {
     return (
       <Container fluid='true'>
         <Row>
           <Col>
-            <Gauges />
+            <DataContainer gauges={this.state.gauges} />
           </Col>
           <Col>
-            <ViewMap />
+            <ViewMap gauges={this.state.gauges} />
           </Col>
         </Row>
       </Container>

@@ -24,7 +24,6 @@ class Header extends React.Component {
         <Navbar.Brand>LRWRA Rain Dashboard</Navbar.Brand>
         <div id='div'>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
-
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='mr-auto'>
               <Nav.Link target='_blank' href='http://www.lrwra.com'>
