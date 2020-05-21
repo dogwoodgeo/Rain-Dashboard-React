@@ -9,19 +9,10 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <Header />
+        {/* <Header /> */}
         <MainCont />
       </Router>
     );
   }
 }
 export default App;
-
-// function App() {
-//   return (
-//     <div className='App'>
-//       <ViewMap />
-//     </div>
-//   );
-// }
-//export default App;

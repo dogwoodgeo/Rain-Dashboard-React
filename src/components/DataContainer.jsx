@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Nav } from 'react-bootstrap';
 import { Route, Switch, Link } from 'react-router-dom';
 import './DataContainer.css';
+import Header from './Header';
 import Live from './pages/Live';
 import Events from './pages/Events';
 import About from './pages/About';
@@ -15,12 +16,13 @@ export default class DataContainer extends React.Component {
       <Container
         fluid='true'
         id='data-container'
-        style={{ background: '#32322F' }}
+        style={{ background: '#32322F', overflow: 'scroll' }}
         variant='dark'
       >
+        <Header />
         <Nav
           justify
-          variant='tabs dark'
+          variant='tabs'
           defaultActiveKey='Live'
           // className='justify-content-center'
         >

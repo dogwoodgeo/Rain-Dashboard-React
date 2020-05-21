@@ -7,10 +7,14 @@ import { Nav, Navbar } from 'react-bootstrap';
 //* Light gray hex: '#32322F'
 
 class Header extends React.Component {
-  state = {};
   render() {
     return (
-      <Navbar style={{ background: '#32322F' }} variant='dark' expand='sm'>
+      <Navbar
+        style={{ background: '#32322F' }}
+        variant='dark'
+        className='justify-content-center'
+        // expand='sm'
+      >
         <Navbar.Brand>
           <img
             id='logo'
@@ -21,8 +25,10 @@ class Header extends React.Component {
             alt='LRWRA Logo'
           />
         </Navbar.Brand>
-        <Navbar.Brand>LRWRA Rain Dashboard</Navbar.Brand>
-        <div id='div'>
+        <Navbar.Brand style={{ fontSize: 26 }}>
+          LRWRA Rain Dashboard
+        </Navbar.Brand>
+        {/* <div id='div'>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='mr-auto'>
@@ -34,7 +40,7 @@ class Header extends React.Component {
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
-        </div>
+        </div> */}
       </Navbar>
     );
   }

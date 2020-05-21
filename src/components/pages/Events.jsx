@@ -6,8 +6,8 @@ export default class Events extends React.Component {
   state = {};
   render() {
     return (
-      <Container className='mt-1 mb-3'>
-        <h4>Rain Events</h4>
+      <Container>
+        <h4 className='mt-3 mb-3'>Rain Events</h4>
         <ListGroup>
           <ListGroup.Item variant='dark'>
             • You are only limited by your imagination.
