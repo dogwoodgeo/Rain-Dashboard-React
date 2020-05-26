@@ -16,7 +16,7 @@ export default class Live extends React.Component {
       >
         <Row className='mt-3 mb-2'>
           <Col>
-            <h4>Rain Gauges • Live</h4>
+            <h4 style={h4Style}>Rain Gauges • Live</h4>
           </Col>
         </Row>
         <CardDeck className='d-flex flex-row flex-wrap ml-2 mr-2 mt-1 justify-content-around'>
@@ -30,3 +30,5 @@ export default class Live extends React.Component {
     );
   }
 }
+
+const h4Style = { textAlign: 'center', color: '#e4e4e4' };

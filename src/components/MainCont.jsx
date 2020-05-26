@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container, Col, Row } from 'react-bootstrap';
 import { queryFeatures } from '@esri/arcgis-rest-feature-layer';
-import './MainCont.css';
 import ViewMap from './ViewMap';
 import DataContainer from './DataContainer';
 import EventData from './event-data.json';
@@ -40,10 +39,13 @@ export default class MainCont extends React.Component {
       <Container fluid='true'>
         <Row>
           <Col style={colStyle}>
-            <DataContainer gauges={this.state.gauges} />
+            <DataContainer
+              gauges={this.state.gauges}
+              events={this.state.events}
+            />
           </Col>
           <Col style={colStyle}>
-            <ViewMap gauges={this.state.gauges} />
+            <ViewMap gauges={this.state.gauges} events={this.state.events} />
           </Col>
         </Row>
       </Container>

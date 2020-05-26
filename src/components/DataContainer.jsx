@@ -52,7 +52,7 @@ export default class DataContainer extends React.Component {
             <Live gauges={this.props.gauges} />
           </Route>
           <Route path='/events' component={Events}>
-            <Events />
+            <Events events={this.props.events} />
           </Route>
           <Route path='/about' component={About}>
             <About />

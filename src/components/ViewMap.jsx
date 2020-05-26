@@ -33,6 +33,11 @@ export default class ViewMap extends React.Component {
           let whereClause = 'TAG IN (';
           if (array.length === 0) {
             whereClause = whereClause.concat(')');
+          } else if (array.length === 1) {
+            array.forEach((element) => {
+              let gaugeTag = "'" + element + "')";
+              whereClause = whereClause.concat(gaugeTag);
+            });
           } else {
             array.forEach((element) => {
               if (array.indexOf(element) === 0) {
@@ -54,7 +59,7 @@ export default class ViewMap extends React.Component {
         //* No Rain Symbol
         const noRainSymbol = {
           type: 'simple-marker',
-          outline: { color: '#0D1C2B', width: 1 },
+          outline: { color: '#32322F', width: 0.5 },
           size: 13,
           color: '#EBEBEB',
         };
@@ -62,7 +67,7 @@ export default class ViewMap extends React.Component {
         //* Rain Symbol
         const rainSymbol = {
           type: 'simple-marker',
-          outline: { color: 'white' },
+          outline: { color: '#E4E4E4', size: 1 },
           size: 13,
           color: '#309E75',
         };
@@ -127,9 +132,9 @@ export default class ViewMap extends React.Component {
         const rainLabelClass = {
           symbol: {
             type: 'text',
-            color: '#309E75',
-            haloColor: '#32322F',
-            haloSize: 1.5,
+            color: '#E4E4E4',
+            haloColor: '#309E75',
+            haloSize: 1,
             font: {
               family: 'sans-serif',
               size: 13,
