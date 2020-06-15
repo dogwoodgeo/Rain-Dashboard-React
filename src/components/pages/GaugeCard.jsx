@@ -2,10 +2,9 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Moment from 'moment';
 //TODO Add tool tips explain style changes and/or link to open charts
+//TODO Ternary operators????>
 
 export default class GaugeCard extends React.Component {
-  //TODO Ternary operators????>
-
   formatTimestamp = () => {
     let timeStamp = this.props.gauge.attributes.TIMESTAMP;
     let date;
@@ -36,17 +35,17 @@ export default class GaugeCard extends React.Component {
     if (this.props.gauge.attributes.VALUE === 0)
       return {
         color: '#e4e4e4',
-        fontSize: '40px',
+        fontSize: '35px',
       };
     else if (this.props.gauge.attributes.VALID !== 'OK')
       return {
         color: '#EDD977',
-        fontSize: '40px',
+        fontSize: '35px',
       };
     else
       return {
         color: '#309E75',
-        fontSize: '40px',
+        fontSize: '35px',
       };
   };
 
@@ -132,29 +131,32 @@ export default class GaugeCard extends React.Component {
 
     return (
       <Card
-        className='h-90 rounded m-1 text-center'
-        style={{ background: '#2A2A28', width: '9rem' }}
+        className='h-90 m-0 text-center text-nowrap'
+        style={{ background: '#2A2A28', width: '9rem', borderRadius: 0 }}
       >
+        {' '}
         <Card.Header
-          className='font-weight-bold text-nowrap'
+          className='font-weight-bold text-nowrap text-center'
           style={this.getHeaderStyle()}
         >
           {setNameText(TAGNAME)}
         </Card.Header>
-        <Card.Body className='p-1'>
-          <Card.Text className='m-0' style={this.getTimeStyle()}>
-            {this.formatTimestamp()}
-          </Card.Text>
-          <Card.Text
-            className='font-weight-bold m-0'
-            style={this.getAmountStyle()}
-          >
-            {VALUE}"
-          </Card.Text>
-          <Card.Text className='text-center' style={this.getChangeStyle()}>
-            {setChangeText(CHANGE)}
-          </Card.Text>
-        </Card.Body>
+        <Card.Link href='#' className='btn'>
+          <Card.Body className='p-1'>
+            <Card.Text className='m-0' style={this.getTimeStyle()}>
+              {this.formatTimestamp()}
+            </Card.Text>
+            <Card.Text
+              className='font-weight-bold m-0'
+              style={this.getAmountStyle()}
+            >
+              {VALUE}"
+            </Card.Text>
+            <Card.Text className='text-center' style={this.getChangeStyle()}>
+              {setChangeText(CHANGE)}
+            </Card.Text>
+          </Card.Body>
+        </Card.Link>
       </Card>
     );
   }

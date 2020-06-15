@@ -1,46 +1,91 @@
 [{
-    "ID": 0,
-    "DATE": "Jan 2, 2020 6PM",
-    "DURATION": 11,
-    "SSO": "No",
+    "ID": 41,
+    "DATE": "May 28, 2020 2PM",
+    "DURATION": 8,
+    "SSO": "Unk",
     "SSO_NUM": 0,
     "STORM": "No",
     "STORM_YR": ""
-
   },
   {
-    "ID": 1,
-    "DATE": "Jan 10, 2020 9PM",
-    "DURATION": 12,
-    "SSO": "Yes",
-    "SSO_NUM": 31,
+    "ID": 40,
+    "DATE": "May 27, 2020 5PM",
+    "DURATION": 1,
+    "SSO": "Unk",
+    "SSO_NUM": 0,
     "STORM": "Yes",
     "STORM_YR": "2-Year Storm"
-
   },
   {
-    "ID": 2,
-    "DATE": "Jan 18, 2020 1AM",
-    "DURATION": 7,
-    "SSO": "No",
-    "SSO_NUM": 0,
-    "STORM": "No",
-    "STORM_YR": ""
-
-  },
-  {
-    "ID": 3,
-    "DATE": "Jan 22, 2020 1PM",
-    "DURATION": 22,
+    "ID": 39,
+    "DATE": "May 25, 2020 7PM",
+    "DURATION": 12,
     "SSO": "Yes",
     "SSO_NUM": 6,
+    "STORM": "Yes",
+    "STORM_YR": "2-Year Storm"
+  },
+  {
+    "ID": 38,
+    "DATE": "May 23, 2020 1AM",
+    "DURATION": 9,
+    "SSO": "No",
+    "SSO_NUM": 0,
+    "STORM": "Yes",
+    "STORM_YR": "1-Year Storm"
+  },
+  {
+    "ID": 37,
+    "DATE": "May 22, 2020 1PM",
+    "DURATION": 2,
+    "SSO": "No",
+    "SSO_NUM": 0,
+    "STORM": "Yes",
+    "STORM_YR": "1-Year Storm"
+
+  }, {
+    "ID": 36,
+    "DATE": "May 22, 2020 1AM",
+    "DURATION": 4,
+    "SSO": "No",
+    "SSO_NUM": 0,
+    "STORM": "Yes",
+    "STORM_YR": "5-Year Storm"
+
+  },
+  {
+    "ID": 35,
+    "DATE": "May 18, 2020 10AM",
+    "DURATION": 4,
+    "SSO": "No",
+    "SSO_NUM": 0,
     "STORM": "No",
     "STORM_YR": ""
 
   },
   {
-    "ID": 4,
-    "DATE": "Jan 25, 2020 9PM",
+    "ID": 34,
+    "DATE": "May 16, 2020 1PM",
+    "DURATION": 27,
+    "SSO": "Yes",
+    "SSO_NUM": 5,
+    "STORM": "No",
+    "STORM_YR": ""
+
+  },
+  {
+    "ID": 33,
+    "DATE": "May 12, 2020 1PM",
+    "DURATION": 9,
+    "SSO": "No",
+    "SSO_NUM": 0,
+    "STORM": "No",
+    "STORM_YR": ""
+
+  },
+  {
+    "ID": 32,
+    "DATE": "May 12, 2020 1PM",
     "DURATION": 5,
     "SSO": "No",
     "SSO_NUM": 0,
@@ -49,88 +94,8 @@
 
   },
   {
-    "ID": 5,
-    "DATE": "Jan 29, 2020 2AM",
-    "DURATION": 12,
-    "SSO": "No",
-    "SSO_NUM": 0,
-    "STORM": "No",
-    "STORM_YR": ""
-
-  },
-  {
-    "ID": 6,
-    "DATE": "Feb 4, 2020 8AM",
-    "DURATION": 12,
-    "SSO": "No",
-    "SSO_NUM": 0,
-    "STORM": "No",
-    "STORM_YR": ""
-
-  },
-  {
-    "ID": 7,
-    "DATE": "Feb 5, 2020 5AM",
-    "DURATION": 16,
-    "SSO": "No",
-    "SSO_NUM": 0,
-    "STORM": "No",
-    "STORM_YR": ""
-
-  },
-  {
-    "ID": 8,
-    "DATE": "Feb 9, 2020 10PM",
-    "DURATION": 10,
-    "SSO": "No",
-    "SSO_NUM": 0,
-    "STORM": "No",
-    "STORM_YR": ""
-
-  },
-  {
-    "ID": 9,
-    "DATE": "Feb 10, 2020 5PM",
-    "DURATION": 8,
-    "SSO": "No",
-    "SSO_NUM": 0,
-    "STORM": "No",
-    "STORM_YR": ""
-
-  },
-  {
-    "ID": 10,
-    "DATE": "Feb 11, 2020 10PM",
-    "DURATION": 16,
-    "SSO": "Yes",
-    "SSO_NUM": 33,
-    "STORM": "No",
-    "STORM_YR": ""
-
-  },
-  {
-    "ID": 11,
-    "DATE": "Feb 18, 2020 4AM",
-    "DURATION": 15,
-    "SSO": "Yes",
-    "SSO_NUM": 14,
-    "STORM": "No",
-    "STORM_YR": ""
-
-  },
-  {
-    "ID": 12,
-    "DATE": "Feb 23, 2020 6PM",
-    "DURATION": 11,
-    "SSO": "No",
-    "SSO_NUM": 0,
-    "STORM": "No",
-    "STORM_YR": ""
-
-  },
-  {
-    "ID": 13,
-    "DATE": "March 9, 2020 1PM",
+    "ID": 31,
+    "DATE": "May 8, 2020 3AM",
     "DURATION": 5,
     "SSO": "No",
     "SSO_NUM": 0,
@@ -139,8 +104,18 @@
 
   },
   {
-    "ID": 14,
-    "DATE": "March 10, 2020 2AM",
+    "ID": 30,
+    "DATE": "April 28, 2020 10PM",
+    "DURATION": 4,
+    "SSO": "No",
+    "SSO_NUM": 0,
+    "STORM": "No",
+    "STORM_YR": ""
+
+  },
+  {
+    "ID": 29,
+    "DATE": "April 24, 2020 11PM",
     "DURATION": 2,
     "SSO": "No",
     "SSO_NUM": 0,
@@ -149,9 +124,19 @@
 
   },
   {
-    "ID": 15,
-    "DATE": "March 12, 2020 8PM",
-    "DURATION": 3,
+    "ID": 28,
+    "DATE": "April 22, 2020 5AM",
+    "DURATION": 30,
+    "SSO": "Yes",
+    "SSO_NUM": 5,
+    "STORM": "No",
+    "STORM_YR": ""
+
+  },
+  {
+    "ID": 27,
+    "DATE": "April 19, 2020 5PM",
+    "DURATION": 12,
     "SSO": "No",
     "SSO_NUM": 0,
     "STORM": "No",
@@ -159,9 +144,19 @@
 
   },
   {
-    "ID": 16,
-    "DATE": "March 14, 2020 5PM",
-    "DURATION": 11,
+    "ID": 26,
+    "DATE": "April 11, 2020 4PM",
+    "DURATION": 48,
+    "SSO": "Yes",
+    "SSO_NUM": 15,
+    "STORM": "No",
+    "STORM_YR": ""
+
+  },
+  {
+    "ID": 25,
+    "DATE": "April 8, 2020 10PM",
+    "DURATION": 1,
     "SSO": "No",
     "SSO_NUM": 0,
     "STORM": "No",
@@ -169,8 +164,58 @@
 
   },
   {
-    "ID": 17,
-    "DATE": "March 16, 2020 6AM",
+    "ID": 24,
+    "DATE": "APril 7, 2020 6AM",
+    "DURATION": 5,
+    "SSO": "No",
+    "SSO_NUM": 0,
+    "STORM": "No",
+    "STORM_YR": ""
+
+  },
+  {
+    "ID": 23,
+    "DATE": "March 30, 2020 11AM",
+    "DURATION": 41,
+    "SSO": "Yes",
+    "SSO_NUM": 18,
+    "STORM": "No",
+    "STORM_YR": ""
+
+  },
+  {
+    "ID": 22,
+    "DATE": "March 28, 2020 2PM",
+    "DURATION": 6,
+    "SSO": "No",
+    "SSO_NUM": 0,
+    "STORM": "No",
+    "STORM_YR": ""
+
+  },
+  {
+    "ID": 21,
+    "DATE": "March 24, 2020 4PM",
+    "DURATION": 4,
+    "SSO": "No",
+    "SSO_NUM": 0,
+    "STORM": "No",
+    "STORM_YR": ""
+
+  },
+  {
+    "ID": 20,
+    "DATE": "March 24, 2020 2AM",
+    "DURATION": 4,
+    "SSO": "NO",
+    "SSO_NUM": 0,
+    "STORM": "No",
+    "STORM_YR": ""
+
+  },
+  {
+    "ID": 19,
+    "DATE": "March 22, 2020 7AM",
     "DURATION": 5,
     "SSO": "No",
     "SSO_NUM": 0,
@@ -189,8 +234,8 @@
 
   },
   {
-    "ID": 19,
-    "DATE": "March 22, 2020 7AM",
+    "ID": 17,
+    "DATE": "March 16, 2020 6AM",
     "DURATION": 5,
     "SSO": "No",
     "SSO_NUM": 0,
@@ -199,19 +244,9 @@
 
   },
   {
-    "ID": 20,
-    "DATE": "March 24, 2020 2AM",
-    "DURATION": 4,
-    "SSO": "NO",
-    "SSO_NUM": 0,
-    "STORM": "No",
-    "STORM_YR": ""
-
-  },
-  {
-    "ID": 21,
-    "DATE": "March 24, 2020 4PM",
-    "DURATION": 4,
+    "ID": 16,
+    "DATE": "March 14, 2020 5PM",
+    "DURATION": 11,
     "SSO": "No",
     "SSO_NUM": 0,
     "STORM": "No",
@@ -219,9 +254,9 @@
 
   },
   {
-    "ID": 22,
-    "DATE": "March 28, 2020 2PM",
-    "DURATION": 6,
+    "ID": 15,
+    "DATE": "March 12, 2020 8PM",
+    "DURATION": 3,
     "SSO": "No",
     "SSO_NUM": 0,
     "STORM": "No",
@@ -229,68 +264,8 @@
 
   },
   {
-    "ID": 23,
-    "DATE": "March 30, 2020 11AM",
-    "DURATION": 41,
-    "SSO": "Yes",
-    "SSO_NUM": 18,
-    "STORM": "No",
-    "STORM_YR": ""
-
-  },
-  {
-    "ID": 24,
-    "DATE": "APril 7, 2020 6AM",
-    "DURATION": 5,
-    "SSO": "No",
-    "SSO_NUM": 0,
-    "STORM": "No",
-    "STORM_YR": ""
-
-  },
-  {
-    "ID": 25,
-    "DATE": "April 8, 2020 10PM",
-    "DURATION": 1,
-    "SSO": "No",
-    "SSO_NUM": 0,
-    "STORM": "No",
-    "STORM_YR": ""
-
-  },
-  {
-    "ID": 26,
-    "DATE": "April 11, 2020 4PM",
-    "DURATION": 48,
-    "SSO": "Yes",
-    "SSO_NUM": 15,
-    "STORM": "No",
-    "STORM_YR": ""
-
-  },
-  {
-    "ID": 27,
-    "DATE": "April 19, 2020 5PM",
-    "DURATION": 12,
-    "SSO": "No",
-    "SSO_NUM": 0,
-    "STORM": "No",
-    "STORM_YR": ""
-
-  },
-  {
-    "ID": 28,
-    "DATE": "April 22, 2020 5AM",
-    "DURATION": 30,
-    "SSO": "Yes",
-    "SSO_NUM": 5,
-    "STORM": "No",
-    "STORM_YR": ""
-
-  },
-  {
-    "ID": 29,
-    "DATE": "April 24, 2020 11PM",
+    "ID": 14,
+    "DATE": "March 10, 2020 2AM",
     "DURATION": 2,
     "SSO": "No",
     "SSO_NUM": 0,
@@ -299,18 +274,8 @@
 
   },
   {
-    "ID": 30,
-    "DATE": "April 28, 2020 10PM",
-    "DURATION": 4,
-    "SSO": "No",
-    "SSO_NUM": 0,
-    "STORM": "No",
-    "STORM_YR": ""
-
-  },
-  {
-    "ID": 31,
-    "DATE": "May 8, 2020 3AM",
+    "ID": 13,
+    "DATE": "March 9, 2020 1PM",
     "DURATION": 5,
     "SSO": "No",
     "SSO_NUM": 0,
@@ -319,8 +284,88 @@
 
   },
   {
-    "ID": 32,
-    "DATE": "May 12, 2020 1PM",
+    "ID": 12,
+    "DATE": "Feb 23, 2020 6PM",
+    "DURATION": 11,
+    "SSO": "No",
+    "SSO_NUM": 0,
+    "STORM": "No",
+    "STORM_YR": ""
+
+  },
+  {
+    "ID": 11,
+    "DATE": "Feb 18, 2020 4AM",
+    "DURATION": 15,
+    "SSO": "Yes",
+    "SSO_NUM": 14,
+    "STORM": "No",
+    "STORM_YR": ""
+
+  },
+  {
+    "ID": 10,
+    "DATE": "Feb 11, 2020 10PM",
+    "DURATION": 16,
+    "SSO": "Yes",
+    "SSO_NUM": 33,
+    "STORM": "No",
+    "STORM_YR": ""
+
+  },
+  {
+    "ID": 9,
+    "DATE": "Feb 10, 2020 5PM",
+    "DURATION": 8,
+    "SSO": "No",
+    "SSO_NUM": 0,
+    "STORM": "No",
+    "STORM_YR": ""
+
+  },
+  {
+    "ID": 8,
+    "DATE": "Feb 9, 2020 10PM",
+    "DURATION": 10,
+    "SSO": "No",
+    "SSO_NUM": 0,
+    "STORM": "No",
+    "STORM_YR": ""
+
+  },
+  {
+    "ID": 7,
+    "DATE": "Feb 5, 2020 5AM",
+    "DURATION": 16,
+    "SSO": "No",
+    "SSO_NUM": 0,
+    "STORM": "No",
+    "STORM_YR": ""
+
+  },
+  {
+    "ID": 6,
+    "DATE": "Feb 4, 2020 8AM",
+    "DURATION": 12,
+    "SSO": "No",
+    "SSO_NUM": 0,
+    "STORM": "No",
+    "STORM_YR": ""
+
+  },
+  {
+    "ID": 5,
+    "DATE": "Jan 29, 2020 2AM",
+    "DURATION": 12,
+    "SSO": "No",
+    "SSO_NUM": 0,
+    "STORM": "No",
+    "STORM_YR": ""
+
+  },
+  {
+    "ID": 4,
+    "DATE": "Jan 25, 2020 9PM",
     "DURATION": 5,
     "SSO": "No",
     "SSO_NUM": 0,
@@ -329,9 +374,19 @@
 
   },
   {
-    "ID": 33,
-    "DATE": "May 12, 2020 1PM",
-    "DURATION": 9,
+    "ID": 3,
+    "DATE": "Jan 22, 2020 1PM",
+    "DURATION": 22,
+    "SSO": "Yes",
+    "SSO_NUM": 6,
+    "STORM": "No",
+    "STORM_YR": ""
+
+  },
+  {
+    "ID": 2,
+    "DATE": "Jan 18, 2020 1AM",
+    "DURATION": 7,
     "SSO": "No",
     "SSO_NUM": 0,
     "STORM": "No",
@@ -339,23 +394,24 @@
 
   },
   {
-    "ID": 34,
-    "DATE": "May 16, 2020 1PM",
-    "DURATION": 27,
-    "SSO": "No",
-    "SSO_NUM": 0,
-    "STORM": "No",
-    "STORM_YR": ""
+    "ID": 1,
+    "DATE": "Jan 10, 2020 9PM",
+    "DURATION": 12,
+    "SSO": "Yes",
+    "SSO_NUM": 31,
+    "STORM": "Yes",
+    "STORM_YR": "2-Year Storm"
 
   },
   {
-    "ID": 35,
-    "DATE": "May 18, 2020 10AM",
-    "DURATION": 4,
+    "ID": 0,
+    "DATE": "Jan 2, 2020 6PM",
+    "DURATION": 11,
     "SSO": "No",
     "SSO_NUM": 0,
     "STORM": "No",
     "STORM_YR": ""
 
   }
+
 ]

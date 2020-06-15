@@ -1,10 +1,10 @@
 import React from 'react';
-import { Container, Col, CardDeck, Row } from 'react-bootstrap';
+import { Container, Col, CardDeck, Row, Button } from 'react-bootstrap';
 import './Live.css';
 import GaugeCard from './GaugeCard';
 //? Define PropTypes????
 
-//TODO Get the 'live-container' to scroll
+//TODO Set the 'live-container' to scroll
 export default class Live extends React.Component {
   render() {
     return (
@@ -14,9 +14,12 @@ export default class Live extends React.Component {
         id='live-container'
         variant='dark'
       >
-        <Row className='mt-3 mb-2'>
-          <Col>
-            <h4 style={h4Style}>Rain Gauges • Live</h4>
+        <Row className='mt-3 mb-3'>
+          <Col className='text-center'>
+            {/* <h4 style={h4Style}>Rain Gauges • Live</h4> */}
+            <Button variant='light' size='sm' style={{ color: '#32322F' }}>
+              Check Rain Curve
+            </Button>
           </Col>
         </Row>
         <CardDeck className='d-flex flex-row flex-wrap ml-2 mr-2 mt-1 justify-content-around'>
@@ -31,4 +34,4 @@ export default class Live extends React.Component {
   }
 }
 
-const h4Style = { textAlign: 'center', color: '#e4e4e4' };
+// const h4Style = { textAlign: 'center', color: '#e4e4e4' };

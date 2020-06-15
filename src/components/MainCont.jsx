@@ -9,51 +9,100 @@ export default class MainCont extends React.Component {
   state = {
     gauges: [],
     events: EventData,
+    uvInfos: [],
   };
 
   componentDidMount() {
-    this.fetchCurrentValues();
+    this.fetchCurrentValues()
+      .then(this.setMapSymbolState)
+      .catch((err) => console.log(err));
     setInterval(() => {
-      this.fetchCurrentValues();
+      this.fetchCurrentValues()
+        .then(this.setMapSymbolState)
+        .catch((err) => console.log(err));
     }, 120000);
   }
 
-  fetchCurrentValues = () => {
-    queryFeatures({
-      url:
-        'https://gis.lrwu.com/server/rest/services/RainGauges/Rain_Gauges/FeatureServer/3/',
-      where: '1=1',
-      outFields: '*',
-      f: 'json',
-    })
-      .then((resQuery) => this.setState({ gauges: resQuery.features }))
-      .catch(function (error) {
-        console.log(error);
+  //! fetchCurrentValues
+  //! -------------------------
+  //* An async function so I could chain setMapSymbolState to it
+  fetchCurrentValues = async () => {
+    try {
+      const resQuery = await queryFeatures({
+        url:
+          'https://gis.lrwu.com/server/rest/services/RainGauges/Rain_Gauges/FeatureServer/3/',
+        where: '1=1',
+        outFields: '*',
+        f: 'json',
+        orderByFields: 'TAGNAME',
       });
+      this.setState({ gauges: resQuery.features });
+    } catch (error) {
+      console.log(error);
+    }
     let updateTime = new Date();
-    console.log(`Updated data fetch - ${updateTime.toLocaleTimeString()}`);
+    console.log(`Data fetch - ${updateTime.toLocaleTimeString()}`);
+  };
+
+  //! setMapSymbolState
+  //! -------------------------
+  setMapSymbolState = () => {
+    //* Array of uniqueValueInfos property for UniqueValueRenderer
+    let uvInfosArray = [];
+
+    //* No Rain Symbol
+    const noRainSymbol = {
+      type: 'simple-marker',
+      outline: { color: '#32322F', width: 0.5 },
+      size: 13,
+      color: '#EBEBEB',
+    };
+
+    //* Rain Symbol
+    const rainSymbol = {
+      type: 'simple-marker',
+      outline: { color: '#E4E4E4', size: 1 },
+      size: 13,
+      color: '#309E75',
+    };
+
+    //* Never enters this code block -- nothing in this.state.gauges
+    this.state.gauges.forEach((gauge) => {
+      if (gauge.attributes.VALUE === 0) {
+        uvInfosArray.push({
+          value: gauge.attributes.TAGNAME,
+          symbol: noRainSymbol,
+        });
+      } else {
+        //* Push 'RAIN' object to uvInfo array for UniqueValueRenderer
+        uvInfosArray.push({
+          value: gauge.attributes.TAGNAME,
+          symbol: rainSymbol,
+        });
+      }
+    });
+    this.setState({ uvInfos: uvInfosArray });
   };
 
   render() {
     return (
       <Container fluid='true'>
         <Row>
-          <Col style={colStyle}>
+          <Col>
             <DataContainer
               gauges={this.state.gauges}
               events={this.state.events}
             />
           </Col>
-          <Col style={colStyle}>
-            <ViewMap gauges={this.state.gauges} events={this.state.events} />
+          <Col>
+            <ViewMap
+              gauges={this.state.gauges}
+              events={this.state.events}
+              uvInfos={this.state.uvInfos}
+            />
           </Col>
         </Row>
       </Container>
     );
   }
 }
-
-const colStyle = {
-  m: 0,
-  p: 0,
-};

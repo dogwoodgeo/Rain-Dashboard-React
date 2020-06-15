@@ -8,9 +8,4 @@ import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 //* Renders the 'App' React component ('App.js')in the 'root' element.
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+ReactDOM.render(<App />, document.getElementById('root'));

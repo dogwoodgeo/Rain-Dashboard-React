@@ -9,10 +9,10 @@ export default class About extends React.Component {
         className='mt-2'
         style={{ color: '#efefef', textAlign: 'left' }}
       >
-        <h4 className='mt-3 mb-3' style={headerStyle}>
+        {/* <h4 className='mt-1 mb-3' style={headerStyle}>
           About
-        </h4>
-        <p>
+        </h4> */}
+        <p className='mt-4'>
           This dashboard application displays current and past data from Little
           Rock Water Reclamation Authority's rain gauges.
         </p>
@@ -66,7 +66,7 @@ export default class About extends React.Component {
   }
 }
 
-const headerStyle = {
-  textAlign: 'center',
-  fontWeight: 'bold',
-};
+// const headerStyle = {
+//   textAlign: 'center',
+//   fontWeight: 'bold',
+// };

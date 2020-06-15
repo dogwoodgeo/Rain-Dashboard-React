@@ -10,6 +10,9 @@ import About from './pages/About';
 
 //TODO Remove the Nav element to its own component???
 //TODO Add tool tips to the links.
+//TODO Reconcile the "You should not use <Route component> and <Route children> in the same route;" warning...
+//TODO ..Need the nested component for the props.
+
 export default class DataContainer extends React.Component {
   render() {
     return (
@@ -20,12 +23,7 @@ export default class DataContainer extends React.Component {
         variant='dark'
       >
         <Header />
-        <Nav
-          justify
-          variant='tabs'
-          defaultActiveKey='Live'
-          // className='justify-content-center'
-        >
+        <Nav justify variant='tabs' defaultActiveKey='Live'>
           <Nav.Item>
             <Nav.Link eventKey='Live' as={Link} to='/' style={linkStyle}>
               Live
@@ -65,4 +63,5 @@ export default class DataContainer extends React.Component {
 
 const linkStyle = {
   color: '#969696',
+  borderRadius: 0,
 };

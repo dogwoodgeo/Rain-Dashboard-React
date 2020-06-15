@@ -52,35 +52,32 @@ export default class ViewMap extends React.Component {
               }
             });
           }
-          console.log(whereClause);
+          // console.log(whereClause);
           return whereClause;
         };
 
         //* No Rain Symbol
-        const noRainSymbol = {
-          type: 'simple-marker',
-          outline: { color: '#32322F', width: 0.5 },
-          size: 13,
-          color: '#EBEBEB',
-        };
+        // const noRainSymbol = {
+        //   type: 'simple-marker',
+        //   outline: { color: '#32322F', width: 0.5 },
+        //   size: 13,
+        //   color: '#EBEBEB',
+        // };
 
         //* Rain Symbol
-        const rainSymbol = {
-          type: 'simple-marker',
-          outline: { color: '#E4E4E4', size: 1 },
-          size: 13,
-          color: '#309E75',
-        };
+        // const rainSymbol = {
+        //   type: 'simple-marker',
+        //   outline: { color: '#E4E4E4', size: 1 },
+        //   size: 13,
+        //   color: '#309E75',
+        // };
 
         //* Array of uniqueValueInfos property for UniqueValueRenderer
-        let uvInfos = [];
+        // let uvInfos = [];
 
         //* Hold TAGNAMEs that will be used to build 'where clauses'
         let gaugesNoRain = [];
         let gaugesRain = [];
-
-        //* Hold the label classes passed into rainGaugesLayer.labelingInfo
-        // let labelInfoArray = [];
 
         //* Map gauge props to populate the arrays above
         // eslint-disable-next-line array-callback-return
@@ -88,18 +85,18 @@ export default class ViewMap extends React.Component {
           //* Check if rain gauge has measure rain
           if (gauge.attributes.VALUE === 0) {
             //* Push 'NO RAIN' object to uvInfo array for UniqueValueRenderer
-            uvInfos.push({
-              value: gauge.attributes.TAGNAME,
-              symbol: noRainSymbol,
-            });
+            // uvInfos.push({
+            //   value: gauge.attributes.TAGNAME,
+            //   symbol: noRainSymbol,
+            // });
             //* Push TAGNAME to gaugesNoRain array
             gaugesNoRain.push(gauge.attributes.TAGNAME);
           } else {
             //* Push 'RAIN' object to uvInfo array for UniqueValueRenderer
-            uvInfos.push({
-              value: gauge.attributes.TAGNAME,
-              symbol: rainSymbol,
-            });
+            // uvInfos.push({
+            //   value: gauge.attributes.TAGNAME,
+            //   symbol: rainSymbol,
+            // });
             //* Push TAGNAME to gaugesNoRain array
             gaugesRain.push(gauge.attributes.TAGNAME);
           }
@@ -148,11 +145,10 @@ export default class ViewMap extends React.Component {
           },
         };
 
+        // console.log(uvInfos);
         let rainGaugesRenderer = new UniqueValueRenderer({
-          //type: 'unique-value',
           field: 'TAG',
-          defaultSymbol: noRainSymbol,
-          uniqueValueInfos: uvInfos,
+          uniqueValueInfos: this.props.uvInfos,
         });
 
         //* Using the LRWRA 'Dark' vector tile basemap
@@ -209,8 +205,13 @@ export default class ViewMap extends React.Component {
   render() {
     return (
       <Container id='map-container' fluid='true'>
-        <div className='ViewMap' ref={this.mapRef} />
+        <div className='ViewMap' ref={this.mapRef}>
+          {this.props.children}
+        </div>
       </Container>
     );
   }
 }
+
+//* Hold the label classes passed into rainGaugesLayer.labelingInfo
+// let labelInfoArray = [];
